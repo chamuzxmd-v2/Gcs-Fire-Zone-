@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GCS FIRE ZONE</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SASA GAMES - GCS FIRE ZONE</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
 </head>
 <body>
 
 <!-- Intro Screen -->
 <div id="intro">
+  <img src="https://i.ibb.co/dJDvn6H9/19802.png" width="300" alt="SASA GAMES Logo"/>
   <h1>SASA GAMES</h1>
   <h2>GCS FIRE ZONE</h2>
+  <p>Loading Game...</p>
 </div>
 
-<!-- Lobby -->
-<div id="lobby">
-  <h2>WELCOME TO GCS FIRE ZONE</h2>
+<!-- Lobby Screen -->
+<div id="lobby" style="display:none;">
+  <img src="https://i.ibb.co/dJDvn6H9/19802.png" width="200" alt="SASA GAMES Logo"/>
+  <h2>WELCOME TO SASA GAMES</h2>
+  <h3>GCS FIRE ZONE</h3>
   <button onclick="startMatch()">START MATCH</button>
 </div>
 
 <!-- Game Canvas -->
 <canvas id="gameCanvas"></canvas>
 
-<!-- Scripts -->
+<!-- JS Files -->
 <script src="lobby.js"></script>
 <script src="threeScene.js"></script>
 <script src="game.js"></script>
@@ -37,5 +41,13 @@
 <script src="pets.js"></script>
 <script src="tournament.js"></script>
 <script src="voiceChat.js"></script>
+<script src="killFeed.js"></script>
+<script src="replay.js"></script>
+<script src="events.js"></script>
+<script src="vehicles.js"></script>
+<script src="achievements.js"></script>
+<script src="rewards.js"></script>
+<script src="weapons.js"></script>
+
 </body>
 </html>
