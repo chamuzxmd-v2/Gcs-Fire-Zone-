@@ -8,3 +8,12 @@ function startMatch(){
   startPlaneFlight();
   init3DScene();
 }
+function buyItem(item) {
+  if (player.coins >= item.price) {
+    player.coins -= item.price;
+    if(item.type === "skin") player.skin = item.name;
+    console.log("Bought:", item.name, "Coins left:", player.coins);
+  } else {
+    console.log("Not enough coins!");
+  }
+}
